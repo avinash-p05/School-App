@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:fontFamily="@font/alata"
+        android:gravity="center_horizontal"
+        android:text="Edit Event "
+        android:textAlignment="center"
+        android:textColor="@color/signup"
+        android:textSize="@dimen/_30ssp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.038" />
+
+    <EditText
+        android:id="@+id/editEventNameEditText"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:background="@drawable/report_input"
+        android:ems="10"
+        android:fontFamily="@font/alata"
+        android:gravity="top"
+        android:hint="Enter the Name of Event"
+        android:inputType="textShortMessage|text"
+        android:lines="1"
+        android:padding="10dp"
+
+        android:textColor="@color/black"
+        android:textColorHint="#585858"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.178" />
+
+    <EditText
+        android:id="@+id/editDescriptionEditText"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/report_input"
+        android:ems="10"
+        android:fontFamily="@font/alata"
+        android:gravity="top"
+        android:hint="Describe about it"
+        android:inputType="textMultiLine"
+        android:lineSpacingExtra="@dimen/_2ssp"
+        android:lines="5"
+        android:padding="10dp"
+
+        android:paddingHorizontal="@dimen/_5sdp"
+        android:textColor="@color/black"
+        android:textColorHint="#545454"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.329" />
+
+    <Button
+        android:id="@+id/discardButton"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/signup"
+        android:text="Discard Changes"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.54" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/signup"
+        android:text="Save Changes"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.63" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

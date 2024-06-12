@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e5e5e5"
+    tools:context=".AddFaculty">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <!-- Apply the same selector -->
+
+
+    <EditText
+        android:id="@+id/facultyname"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:background="@drawable/report_input"
+        android:ems="10"
+        android:fontFamily="@font/alata"
+        android:gravity="top"
+        android:hint="Enter the Name of Faculty"
+        android:inputType="textShortMessage|text"
+        android:lines="1"
+        android:padding="10dp"
+
+        android:textColor="@color/black"
+        android:textColorHint="#585858"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.191" />
+
+    <ProgressBar
+        android:id="@+id/progressBar4"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.453" />
+
+    <Button
+        android:id="@+id/addfaculty"
+        android:layout_width="@dimen/_240sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:backgroundTint="@color/signup"
+        android:elevation="@dimen/_15sdp"
+        android:shadowColor="#444444"
+        android:text="Add Faculty"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_18ssp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.792" />
+
+    <android.widget.Button
+        android:id="@+id/chooseimage"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:background="@drawable/btn"
+        android:fontFamily="@font/alata"
+        android:text="Choose Image"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.846"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.391" />
+
+    <EditText
+        android:id="@+id/designation"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/report_input"
+        android:ems="10"
+        android:fontFamily="@font/alata"
+        android:gravity="top"
+        android:hint="Enter the Designation"
+        android:inputType="textMultiLine"
+        android:lineSpacingExtra="@dimen/_2ssp"
+        android:padding="10dp"
+
+        android:paddingHorizontal="@dimen/_5sdp"
+        android:textColor="@color/black"
+        android:textColorHint="#545454"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.288" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:fontFamily="@font/alata"
+        android:gravity="center_horizontal"
+        android:text="Add Faculty"
+        android:textAlignment="center"
+        android:textColor="@color/signup"
+        android:textSize="@dimen/_30ssp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.038" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alata"
+        android:gravity="center_horizontal"
+        android:text="Upload Image - "
+        android:textAlignment="center"
+        android:textColor="@color/signup"
+        android:textSize="@dimen/_11ssp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.162"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.391" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_120sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.585" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
